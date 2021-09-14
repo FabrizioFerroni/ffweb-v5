@@ -32,13 +32,13 @@ if($_POST){
 		$Email->Host = 'mail.fabrizioferroni.com.ar'; 
 		$Email->Port = '465'; 
 		$Email->SMTPSecure = 'ssl';
-		$Email->Username = 'info@fabrizioferroni.com.ar'; 
-		$Email->Password = 'Fa39967592Fe#';
+		$Email->Username = 'email@email.com';  //direccion de email
+		$Email->Password = '*************';  //password
 		$Email->IsHTML(true); 
 		$Email->setFrom($email, $name);
 		$Email->AddReplyTo($email, $name);
-		$Email->AddAddress('info@fabrizioferroni.com.ar', 'Fabrizio Ferroni');
-		$Email->addCC('fabrizioferroni@outlook.com', 'Fabrizio Ferroni');
+		$Email->AddAddress('email@email.com', 'Nombre Apellido'); // a quien va enviado el mail
+		$Email->addCC('email@email.com', 'Nombre Apellido'); // a quien queres que le llegue la copia
 		$Email->Subject = utf8_decode($assunto);
 		$Email->Body .= "<br />
                                  $imagen4 <br /><br />
