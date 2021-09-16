@@ -29,7 +29,7 @@ if($_POST){
 		$Email->SetLanguage("ar");
 		$Email->IsSMTP(); 
 		$Email->SMTPAuth = true; 
-		$Email->Host = 'mail.fabrizioferroni.com.ar'; 
+		$Email->Host = 'smtp.servidor.com'; 
 		$Email->Port = '465'; 
 		$Email->SMTPSecure = 'ssl';
 		$Email->Username = 'email@email.com';  //direccion de email
